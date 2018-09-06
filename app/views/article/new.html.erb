@@ -1,0 +1,32 @@
+<%= form_for :article do |f| %>
+    <div class="form-group"> 
+        Categorie: <br><br><%= f.text_field :title, class: "form-control", placeholder: "Categories", required: "true", value:"Programmation" %>
+        </div>
+
+    <div class="form-group"> 
+        Title: <br><br><%= f.text_field :title, class: "form-control", placeholder: "Title", required: "true" %>
+        </div>
+    
+    <div class="form-group"> 
+        Lien : <br><br><%= f.text_field :lien, type: 'text', class: "form-control", placeholder: "Lien", required: "true" %>
+        </div>
+    
+    <div class="form-group"> 
+        Capture d'écran du Site : <br><br><%= f.text_field :image_url, type: 'text', class: "form-control", placeholder: "Capture", required: "true" %>
+        </div>
+
+    <div class="form-group"> 
+        Photo du Logo : <br><br><%= f.text_field :icon_url, type: 'text', class: "form-control", placeholder: "Logo", required: "true" %>
+        </div>
+
+    <div class="form-group"> 
+        Description : <br><br><%= f.text_field :description, type: 'text', class: "form-control", placeholder: "Description", required: "true" %>
+        </div>
+
+    <div class="form-group"> 
+        Tuto : <br><br><%= f.text_field :tuto, type: 'text', class: "form-control", placeholder: "Tuto", required: "true" %>
+        </div>
+    
+    <%= f.submit class: 'btn btn-primary', value: 'Nouveau article', data: { disable_with: false } %> 
+
+<% end %>
